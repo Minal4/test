@@ -1,0 +1,117 @@
+/********** CUSTOM FONTS ************/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+// font-family: 'Playfair Display', serif;
+
+@font-face {
+    font-family: 'Scriptina';
+    src: url('./assets/fonts/scriptina/Scriptina.woff') format('woff2'),
+        url('./assets/fonts/scriptina/Scriptina.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('./assets/fonts/proximanova/ProximaNova-Regular.woff2') format('woff2'),
+        url('assets/fonts/proximanova/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Alegreya', serif;
+    line-height: 1.5;
+    background-color: #f3f1e9;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 1.875em;
+}
+
+.site-branding a {
+    @include transition(0.5s ease-in-out);
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0;
+    font-family: 'Alegreya', serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    line-height: 1.71428rem;
+    padding: 0.6rem 2.714rem;
+
+    &:hover,
+    &:focus {
+        background-color: rgba(0, 0, 0, 1);
+        color: #fff;
+        letter-spacing: 0.35em;
+    }
+}
+
+.breakfast .inner-content .btn {
+
+    &:hover,
+    &:focus {
+        background-color: rgba(0, 0, 0, 1);
+        color: #fff;
+        letter-spacing: 0.35em;
+    }
+}
+
+section:not(.banner) {
+    padding: 60px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Alegreya', serif;
+
+}
+
+a,
+.pan__slider .owl-carousel .owl-nav button.owl-prev,
+.pan__slider .owl-carousel .owl-nav button.owl-next,
+.owl-dot,
+.btn {
+    @include transition(0.5s ease-in-out);
+}

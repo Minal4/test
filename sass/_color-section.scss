@@ -1,0 +1,57 @@
+/******* COLOR LIGHT *******/
+.site-logo a,
+.header li a,
+.banner h2,
+.banner p,
+.breakfast .section-title h2,
+.btn {
+    color: $color-light;
+}
+
+.sandwich__inner-wrap .sandwich__menu-details {
+    border-color: $color-light;
+}
+
+.receipt {
+    background-color: $color-light;
+}
+
+/*********** PRIMARY COLOR **********/
+
+body,
+.art__blockquote:after,
+.footer-list a,
+.art__blockquote:before {
+    color: $primary-color;
+}
+
+.footer-list {
+    border-color: $primary-color;
+}
+
+/*********** SECONDARY COLOR **********/
+
+
+.section-title p,
+.inner-content .btn,
+.menu-list h2,
+.details h2,
+.price {
+    color: $secondary-color;
+}
+
+.art__avatar span {
+    border-color: $secondary-color;
+}
+
+/*********** LINK HOVER COLOR **********/
+
+.site-branding a,
+.header ul li a,
+a {
+
+    &:hover,
+    &:focus {
+        color: $secondary-color;
+    }
+}
